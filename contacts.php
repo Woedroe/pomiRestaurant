@@ -18,23 +18,19 @@
                 echo "<p> <font color=red>Pomi </font>Grill & Sushi </p>";
                 ?>
             </div>
-            <div class="pomi">
-                 <a href="index.php" class="indexA">Home</a>
+            <div class="boxxy">
+                 <a href="index.php" class="IndexA">Home</a>
             </div>
-            <div class="pomi">
+            <div class="boxxy">
                  <a href="menu.php">Menu</a>
             </div>
-            <div class="pomi">
+            <div class="boxxy">
                 <a href="contacts.php">Contacts</a>
             </div>
-            <div class="pomi">
+            <div class="boxxy" id="log-in">
                 <a href="log-In.php"><font color=red>Log in</font></a>  
             </div>
-
-
-
     </header>
-
     
 </body>
 </html>
