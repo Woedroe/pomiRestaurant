@@ -31,13 +31,16 @@ header{
 .pomi{
 	align-items: center;
 	height: 100%;
-	width: 20%;
+	width: 40%;
+	margin-left: 2%;
 
 }
 
-.indexA{
-	height: 100%;
-	width: 100%;
-	align-items: center;
-	margin-top: -100%;
+.boxxy{
+	height: 40%;
+	width: 15%;
+}
+
+#log-in{
+	margin-left: 47%;
 }
