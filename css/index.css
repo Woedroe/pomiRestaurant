@@ -5,6 +5,12 @@ body{
 	font-size: 200%;
 }
 
+a{
+    list-style-type: none;
+    text-decoration: none;
+    list-style: none;
+	color: white;
+}
 
 header{
 	background-color: #202020;
@@ -15,7 +21,7 @@ header{
 
 	display: flex;
 
-	flex-direction: row-reverse;
+	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: center;
@@ -24,5 +30,14 @@ header{
 
 .pomi{
 	align-items: center;
+	height: 100%;
+	width: 20%;
 
+}
+
+.indexA{
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	margin-top: -100%;
 }

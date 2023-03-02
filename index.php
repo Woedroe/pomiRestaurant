@@ -16,9 +16,22 @@
             <div class="pomi">
                 <?php
                 echo "<p> <font color=red>Pomi </font>Grill & Sushi </p>";
-
                 ?>
             </div>
+            <div class="pomi">
+                 <a href="index.php" class="IndexA">Home</a>
+            </div>
+            <div class="pomi">
+                 <a href="menu.php">Menu</a>
+            </div>
+            <div class="pomi">
+                <a href="contacts.php">Contacts</a>
+            </div>
+            <div class="pomi">
+                <a href="log-In.php"><font color=red>Log in</font></a>  
+            </div>
+
+
 
     </header>
 
