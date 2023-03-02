@@ -1,0 +1,28 @@
+body{
+	overflow-x: hidden;
+	color: white;
+	font-family: 'Iceland', cursive;
+	font-size: 200%;
+}
+
+
+header{
+	background-color: #202020;
+	width: 102vw;
+	height: 15vh;
+	margin-top: -10px;
+	margin-left: -10px;
+
+	display: flex;
+
+	flex-direction: row-reverse;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.pomi{
+	align-items: center;
+
+}
