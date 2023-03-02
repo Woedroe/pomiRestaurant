@@ -32,9 +32,12 @@
             </div>
     </header>
 
-    <div>
-        <img src="IMG/sushi-background1.jpg" alt="error.404">
+    <div class="index-body">
+        <div class="black-box"></div>
+        <img src="IMG/sushi-background1.jpg" alt="error.404" class="sushiB">
     </div>
+
+    
 
 </body>
 </html>
