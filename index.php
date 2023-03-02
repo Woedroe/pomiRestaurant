@@ -33,11 +33,18 @@
     </header>
 
     <div class="index-body">
-        <div class="black-box"></div>
+        <div class="black-box">
+            <div class="Logo">
+                <img src="IMG/arch.webp" alt="error.404" class="logoIMG">
+            </div>  
+            <?php
+                echo "<p> <font color=red>Pomi </font>Grill & Sushi </p>";
+                ?>
+            <p class="loremip">ロレム・イプサム あなたのお母さんはフェルメイディング通りで出産しました</p>
+        </div>
         <img src="IMG/sushi-background1.jpg" alt="error.404" class="sushiB">
     </div>
 
-    
 
 </body>
 </html>
