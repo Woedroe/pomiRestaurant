@@ -119,7 +119,15 @@ header{
 }
 
 #white-body{
+	margin-top: 30vh;
 	height: 60vh;
+}
+#bottem-body{
+	background-color: black	;
+	margin-top: 90vh;
+	height: 90vh;
+
+	flex-direction: column;
 }
 
 .loremip2{
@@ -163,3 +171,70 @@ header{
 	background: rgba(114, 0, 0, 0.6);
 }
 
+.textholdster{
+	display: flex;
+	z-index: 0;
+
+	height: 80%;
+	width: 60%;
+
+	margin-left: 5%;
+
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: center;
+}
+
+.IMGholdster{
+	
+	display: flex;
+
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+
+
+	height: 80%;
+	margin-left: 4%;
+	
+}
+
+.logoholder{
+	position: absolute;
+	height: 40%;
+}
+
+.balls{
+	width: 100%;
+	height: 100%;
+}
+
+.titel{
+	height: 20%;
+	color: red;
+	font-size: 150%;
+}
+
+.loremtxt{
+	color: black;
+	font-size: 125%;
+	margin-top: -5%;
+}
+
+.holdster{
+	height: 20%;
+	margin-top: 3%;
+}
+
+.holdster2{
+	height: 60%;
+	width: 44%;
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+}

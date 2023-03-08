@@ -55,7 +55,28 @@
     </div>
 
     <div class="extended-body" id="white-body">
+        <div class="textholdster">
+            <p class="titel">こんにちは!!</p>
+            <p class="loremtxt">  あなたのお母さんはフェルメイディング通りで出産しました
+                こんにちは、あなたはとても不機嫌でか
+                こんにちは、私たちの間で楽しみます
+            </p>
+        </div>
+        <div class="IMGholdster">
+            <img src="IMG/balls.png" alt="error404" class="balls"> 
+            <div class="logoholder">
+                <img src="IMG/arch.webp" alt="error 404" class="balls"> 
+            </div>
+        </div>
+    </div>
 
+    <div class="extended-body" id="bottem-body">
+        <div class="holdster">
+            <img class="balls" src="IMG/noodle.png" alt="error404">
+        </div>
+        <div class="holdster2">
+            <p>何を考えていたのかわか らない子供を置き去りにして今、私は呪いに苦しみ、今、Hamburberこの怒りと罪悪感と悲しみと 永遠に私を悩ませに来る川の果ての崖が待ちきれないこれは私が求めている復讐ですか？それとも私に復讐する人を探していますか？</p>
+        </div>
     </div>
 
 
