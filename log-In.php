@@ -32,6 +32,15 @@
             </div>
     </header>
 
+    <?php
+
+        include "pages/conn.php";
+        require "pages/conn.php";
+
+        
+
+    ?>
+
     
 </body>
 </html>

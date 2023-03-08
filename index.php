@@ -15,7 +15,7 @@
     <header>
             <div class="pomi">
                 <?php
-                echo "<p> <font color=red>Pomi </font>Grill & Sushi </p>";
+                    echo "<p> <font color=red>Pomi </font>Grill & Sushi </p>";
                 ?>
             </div>
             <div class="boxxy">
@@ -28,7 +28,7 @@
                 <a href="contacts.php">Contacts</a>
             </div>
             <div class="boxxy" id="log-in">
-                <a href="log-In.php"><font color=red>Log in</font></a>  
+                <a href="log-In.php"><font colofr=red>Log in</font></a>  
             </div>
     </header>
 
@@ -39,11 +39,25 @@
             </div>  
             <?php
                 echo "<p> <font color=red>Pomi </font>Grill & Sushi </p>";
-                ?>
+            ?>
             <p class="loremip">ロレム・イプサム あなたのお母さんはフェルメイディング通りで出産しました</p>
         </div>
         <img src="IMG/sushi-background1.jpg" alt="error.404" class="sushiB">
     </div>
+
+    <div class="extended-body">
+        <div class="red-overlay"></div>
+        <img src="IMG/background2.png" alt="error.404" class="bimg">
+        <p class="loremip2">ニワトリは図書館を壊して火を放ち、後にニワトリは放火で逮捕される ニワトリは図書館を壊して</p>
+        <div class="order">
+            <p>Bestel nu</p>
+        </div>
+    </div>
+
+    <div class="extended-body" id="white-body">
+
+    </div>
+
 
 
 </body>
