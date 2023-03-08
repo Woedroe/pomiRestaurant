@@ -238,3 +238,42 @@ header{
 	align-items: center;
 	text-align: center;
 }
+
+
+.backgroundbox{
+	background-color: black;
+	height: 100vh;
+	width: 101vw;
+	margin-left: -1%;	
+
+	display: flex;
+
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.side{
+	height: 100%;
+	width: 15%;
+}
+
+.middel{
+	height: 100%;
+	width: 70%;
+}
+
+.seebg{
+	z-index: 0;
+	background: rgba(163, 2, 2, 0.6);
+	height: 100%;
+	width: 100%;
+}
+
+.chickenIMG{
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+}

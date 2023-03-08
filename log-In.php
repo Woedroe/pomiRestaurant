@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/stopscroll.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
@@ -32,14 +33,40 @@
             </div>
     </header>
 
+    <div class="backgroundbox">
+
+        <div class="side">
+            <div class="seebg">
+                <img src="IMG/chickenT.jpg" alt="error404" class="chickenIMG">
+            </div>
+        </div>
+
+        <div class="middel">
+
+        </div>
+
+        <div class="side">
+            <div class="seebg">
+                <img src="" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+        <!--DELIMITER-->
+        <!--DELIMITER-->
+        <!--DELIMITER-->
+
     <?php
 
         include "pages/conn.php";
         require "pages/conn.php";
 
-        
+    
 
     ?>
+
 
     
 </body>
