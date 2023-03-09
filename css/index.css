@@ -258,6 +258,7 @@ header{
 .side{
 	height: 100%;
 	width: 15%;
+	z-index: 0;	
 }
 
 .middel{
@@ -265,14 +266,14 @@ header{
 	width: 70%;
 }
 
-.seebg{
+.stbg{
 	z-index: 0;
 	background: rgba(163, 2, 2, 0.6);
 	height: 100%;
 	width: 100%;
 }
 
-.chickenIMG{
+.chicken{	
 	z-index: -1;
 	height: 100%;
 	width: 100%;

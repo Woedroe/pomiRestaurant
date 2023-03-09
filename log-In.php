@@ -36,9 +36,8 @@
     <div class="backgroundbox">
 
         <div class="side">
-            <div class="seebg">
-                <img src="IMG/chickenT.jpg" alt="error404" class="chickenIMG">
-            </div>
+            <img src="IMG/chickenT.png" alt="error404" class="chicken">
+            <div class="stbg"></div>   
         </div>
 
         <div class="middel">
@@ -46,8 +45,8 @@
         </div>
 
         <div class="side">
-            <div class="seebg">
-                <img src="" alt="">
+            <div class="stbg">
+                <img src="IMG/beefT.png" alt="error404" class="chicken">
             </div>
         </div>
 
@@ -60,8 +59,8 @@
 
     <?php
 
+        require_once "pages/conn.php";
         include "pages/conn.php";
-        require "pages/conn.php";
 
     
 

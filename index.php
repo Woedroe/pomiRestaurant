@@ -28,7 +28,7 @@
                 <a href="contacts.php">Contacts</a>
             </div>
             <div class="boxxy" id="log-in">
-                <a href="log-In.php"><font colofr=red>Log in</font></a>  
+                <a href="log-In.php"><font color=red>Log in</font></a>  
             </div>
     </header>
 
