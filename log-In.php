@@ -36,26 +36,42 @@
     <div class="backgroundbox">
 
         <div class="side">
-            <img src="IMG/chickenT.png" alt="error404" class="chicken">
             <div class="stbg"></div>   
+            <img src="IMG/chickenT.png" alt="error404" class="chicken">
         </div>
 
         <div class="middel">
 
+            <form naam="login" action="temp-LoginScreen.php" method="POST">
+
+                <input type="username" name='username' placeholder="username">
+
+                <input type="password" name='password' placeholder="password">
+
+                <input class="login-register" type="submit" name='submit' value="login">
+
+            </form>
+
+            <form naam="login" action="temp-RegisterScreen.php" method="POST">
+
+
+                <input type="username" name='username' placeholder="username">
+
+                <input type="password" name='password' placeholder="password">
+
+                <input class="login-register" type="submit" name='submit' value="Register">
+
+
+            </form>
+
         </div>
 
         <div class="side">
-            <div class="stbg">
-                <img src="IMG/beefT.png" alt="error404" class="chicken">
-            </div>
+            <div class="stbg"></div>
+            <img src="IMG/beefT.png" alt="error404" class="chicken">
         </div>
 
     </div>
-
-
-        <!--DELIMITER-->
-        <!--DELIMITER-->
-        <!--DELIMITER-->
 
     <?php
 

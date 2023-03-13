@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/stopscroll.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
@@ -30,7 +31,24 @@
             <div class="boxxy" id="log-in">
                 <a href="log-In.php"><font color=red>Log in</font></a>  
             </div>
-    </header>
+    </header>   
+
+    <div class="backgroundbox">
+        <div class="scrollmenu">
+
+            <?php
+
+                for ($i=0; $i < 9; $i++) { 
+                    echo "<div class='sus'></div>";
+                }
+
+            ?>
+
+
+        </div>
+
+
+    </div>
 
     
 </body>
