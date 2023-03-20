@@ -19,7 +19,7 @@
             echo $password;
 
             $sql = "INSERT INTO users (username, password)
-            VALUES ('$username', ' $password')";
+            VALUES ('$username', '$password')";
 
             $conn->exec($sql);
             echo "new record created";

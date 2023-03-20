@@ -34,19 +34,54 @@
     </header>   
 
     <div class="backgroundbox">
+
+    <div class="backgroundblack"></div>
+        <div class="menulogo">
+            <img class="arch" src="IMG/arch.webp" alt="error 404">
+        </div>
+
         <div class="scrollmenu">
 
             <?php
 
-                for ($i=0; $i < 9; $i++) { 
-                    echo "<div class='sus'></div>";
+                for ($i=0; $i <= 11; $i++) { 
+                    echo "<div class='sus'>
+                            <div class='IMG-holder'>
+                                <img class='image' src='IMG/sushi-background1.jpg' alt='error 404'>
+                            </div>
+
+                            <div class='txt-holder'>
+                                <div class='txt-mover'>
+                                    <h1>Sushi</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fermentum consequat dictum. Vivamus pharetra lacus congue. </p>
+                                    <p>€46,99</p>
+                                    <div class='add'>
+                                        <p class='plus'>+</p>
+                                    </div>
+                                </div>
+                            </div>  
+
+                        </div>";
+                }
+
+            ?>
+        </div>
+
+        <div class="Holdster">
+            <div></div>
+            <div class="redoverlay">
+            
+            <?php
+
+                for ($i=0; $i <= 6; $i++) { 
+
                 }
 
             ?>
 
 
+            </div>
         </div>
-
 
     </div>
 
