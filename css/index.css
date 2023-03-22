@@ -386,7 +386,7 @@ header{
 	width: 200px;
 }
 
-input{
+div form input{
 	background-color: red;
 	color: black;
 	font-family: 'Iceland', cursive;
@@ -396,5 +396,103 @@ input{
 	border-radius: 100px;
 	border: 2px solid #D1A653;
 	text-align: center;
-}	
+}		
 
+.bal {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+
+	animation: error 0.25s ease-in forwards .01s;
+}
+
+.error {
+	background-color: gray;
+	color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	position: relative;
+	text-align: center;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.close {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	cursor: pointer;
+}
+
+.close p {
+	font-size: 18px;
+	margin: 0;
+	padding: 0;
+}
+
+.close:hover {
+	transform: scale(1.1);
+}
+
+@keyframes error{
+	0%{
+		transform: scale(0);
+		
+	}
+	100%{
+		transform: scale(1);
+	}
+
+}
+
+	.success {
+		color: black;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #fff;
+		padding: 20px;
+		border-radius: 10px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+		animation: success 4s ease forwards;
+		z-index: 1;
+	}
+	
+	.success p {
+		font-size: 24px;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.cone {
+		position: absolute;
+		margin-left: 35%;
+		width: 300px;
+		height: 300px;
+		background-color: rgba(255, 250, 151, 0.9);
+		transform: translate(-50%, -50%) rotate(45deg);
+		filter: blur(175px);
+		z-index: -1;
+	}
+	
+	@keyframes success {
+		0% {
+		opacity: 0;
+		transform: translate(-50%, -150%);
+		}
+		25% {
+		opacity: 1;
+		transform: translate(-50%, -50%);
+		}
+		50%{
+			opacity: 1;
+			transform: translate(-50%, -50%);
+		}
+		100%{
+		opacity: 0;
+		transform: translate(-50%, -50%);
+		}
+	}

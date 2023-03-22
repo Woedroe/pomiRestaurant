@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/stopscroll.css">
     <title>Pomi Grill & Sushi</title>
+    <link rel="stylesheet" href="css/stopscroll.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
@@ -43,32 +43,37 @@
 
         <div class="middel">
 
-        <form naam="login" action="temp-LoginScreen.php" method="POST">
+            <form naam="login" action="temp-LoginScreen.php" method="POST">
 
-            <input type="username" name='username' placeholder="username">
+                <input type="username" name='username' placeholder="username">
 
-            <input type="password" name='password' placeholder="password">
+                <input type="password" name='password' placeholder="password">
 
-            <input id="login-register" type="submit" name='submit' value="login">
+                <input id="login-register" type="submit" name='submit' value="login">
 
-        </form>
+            </form>
 
-        <div class="success">
-            <div class="cone"></div>
-            <p>Login successful</p>
-        </div>
-        
-        <form naam="login" action="temp-RegisterScreen.php" method="POST">
+            <div class="bal">
+                <div class="error">
+                    <p>error</p>
+                    <p>something went wrong</p>
+                    <div class="close">
+                        <a href="log-in.php">x</a>
+                    </div>
+                </div>
+             </div>
 
-
-            <input type="username" name='username' placeholder="username">
-
-            <input type="password" name='password' placeholder="password">
-
-            <input id="login-register" type="submit" name='submit' value="Register">
+            <form naam="login" action="temp-RegisterScreen.php" method="POST">
 
 
-        </form>
+                <input type="username" name='username' placeholder="username">
+
+                <input type="password" name='password' placeholder="password">
+
+                <input id="login-register" type="submit" name='submit' value="Register">
+
+
+            </form>
 
         </div>
 
