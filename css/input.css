@@ -1,0 +1,21 @@
+div form input{
+	background-color: red;
+	color: black;
+	font-family: 'Iceland', cursive;
+	font-size: 70%;
+	width: 170%;
+	height: 15%;
+	border-radius: 100px;
+	border: 2px solid #D1A653;
+	text-align: center;
+}	
+
+.middel form{
+	margin-left: -15%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 500px;
+	text-align: center;
+	width: 200px;
+}	

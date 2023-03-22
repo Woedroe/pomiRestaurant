@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/contects.css">
-	<title>Pomi Grill & Sushi</title>
+    <link rel="stylesheet" href="css/stopscroll.css">
+    <title>Pomi Grill & Sushi</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
@@ -31,11 +31,54 @@
             <div class="boxxy" id="log-in">
                 <a href="log-In.php"><font color=red>Log in</font></a>  
             </div>
-    </header>
+    </header>   
 
-    <main>
+    <div class="backgroundbox">
 
-    </main>
+    <div class="backgroundblack">
+        <div>
+            <form naam="login" action="temp-LoginScreen.php" method="POST">
+
+                <input type="text" name='Name-item' placeholder="Name">
+
+                <input type="description" name='description' placeholder="description">
+
+                <input type="img" name='img' placeholder="images">
+
+                <input type="price" name='price' placeholder="price">
+
+                <input type="submit" name='submit' value="login">
+
+            </form>
+        </div>
+    </div>
+        <div class="scrollmenu">
+
+            <?php
+
+
+
+            ?>
+        </div>
+
+        <div class="Holdster">
+            <div></div>
+            <div class="redoverlay">
+            
+            <?php
+
+                for ($i=0; $i <= 6; $i++) { 
+
+                }
+
+            ?>
+
+
+            </div>
+        </div>
+
+    </div>
+
     
 </body>
 </html>

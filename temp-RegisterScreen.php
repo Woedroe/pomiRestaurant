@@ -5,26 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 </head>
 <body>
     
-    <?php
+<?php
+    require_once 'pages/conn.php';
 
-        require_once 'pages/conn.php';  
-            
-            $username = $_POST['username'];
-            echo $username;
+    if (isset($_POST['name']) && isset($_POST['description']) && isset($_POST['img']) && isset($_POST['price'])) {
 
-            $password = $_POST['password'];
-            echo $password;
+        $name = $_POST['name'];
+        $description = $_POST['description'];
+        $img = $_POST['img'];
+        $price = $_POST['price'];
 
-            $sql = "INSERT INTO users (username, password)
-            VALUES ('$username', '$password')";
+        $sql = "INSERT INTO menu (name, description, img, price) 
+                VALUES ('$name', '$description', '$img', '$price')";
+        $conn->exec($sql);
 
-            $conn->exec($sql);
-            echo "new record created";
-    ?>
+        echo "New record created successfully";
+    } else {
+        echo "All input fields are required.";
+    }
+?>
     
 </body>
 </html>

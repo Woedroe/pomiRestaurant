@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 </head>
 <body>
     
@@ -17,14 +16,20 @@
         
         $password = $_POST['password'];
 
-        $stmt = $conn->prepare("SELECT username, password FROM users WHERE username=:username AND password=:password");
+        $stmt = $conn->prepare("SELECT username, password, roll FROM users WHERE username=:username AND password=:password");
 
         $stmt->execute(['username' => $username, 'password' => $password]); 
         $row = $stmt->fetch();
 
+
         if ($row['username'] == $username AND $row['password'] == $password) {
             echo "<p>loged-in</p>";
-            header("Location: loged-In.php");
+
+            if($row['roll'] == 1) {
+                header("Location: menuAdmin.php");
+            }else{
+                header("Location: loged-In.php");
+            }
             exit;
         } else {
             echo "<p>incorrect username or password</p>";
