@@ -423,37 +423,37 @@ header{
 
 }
 
-	.success {
-		color: black;
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		background-color: #fff;
-		padding: 20px;
-		border-radius: 10px;
-		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-		animation: success 4s ease forwards;
-		z-index: 1;
-	}
+.success {
+	color: black;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	animation: success 4s ease forwards;
+	z-index: 1;
+}
+
+.success p {
+	font-size: 24px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
 	
-	.success p {
-		font-size: 24px;
-		text-align: center;
-		margin: 0;
-		padding: 0;
-	}
-	
-	.cone {
-		position: absolute;
-		margin-left: 35%;
-		width: 300px;
-		height: 300px;
-		background-color: rgba(255, 250, 151, 0.9);
-		transform: translate(-50%, -50%) rotate(45deg);
-		filter: blur(175px);
-		z-index: -1;
-	}
+.cone {
+	position: absolute;
+	margin-left: 35%;
+	width: 300px;
+	height: 300px;
+	background-color: rgba(255, 250, 151, 0.9);
+	transform: translate(-50%, -50%) rotate(45deg);
+	filter: blur(175px);
+	z-index: -1;
+}
 	
 	@keyframes success {
 		0% {
@@ -473,3 +473,17 @@ header{
 		transform: translate(-50%, -50%);
 		}
 	}
+
+.menu-item{
+	background-color: white;
+	color: #000000;
+	font-size: 80%;
+	height: 50%;
+	width: 25%;
+	margin-left: 2%;
+	margin-top: 2%;	
+}
+
+.xxx{
+	position: absolute;
+}

@@ -9,23 +9,21 @@
 <body>
     
 <?php
-    require_once 'pages/conn.php';
 
-    if (isset($_POST['name']) && isset($_POST['description']) && isset($_POST['img']) && isset($_POST['price'])) {
+require_once 'pages/conn.php';  
+    
+    $username = $_POST['username'];
+    echo $username;
 
-        $name = $_POST['name'];
-        $description = $_POST['description'];
-        $img = $_POST['img'];
-        $price = $_POST['price'];
+    $password = $_POST['password'];
+    echo $password;
 
-        $sql = "INSERT INTO menu (name, description, img, price) 
-                VALUES ('$name', '$description', '$img', '$price')";
-        $conn->exec($sql);
+    $sql = "INSERT INTO users (username, password)
+    VALUES ('$username', '$password')";
 
-        echo "New record created successfully";
-    } else {
-        echo "All input fields are required.";
-    }
+    $conn->exec($sql);
+    echo "new record created";
+    header("Location: log-in.php");
 ?>
     
 </body>

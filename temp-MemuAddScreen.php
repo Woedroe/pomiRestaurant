@@ -8,22 +8,26 @@
 </head>
 <body>
     
-    <?php
 
-        require_once 'pages/conn.php';  
-            
-            $username = $_POST['username'];
-            echo $username;
+<?php
+    require_once 'pages/conn.php';
 
-            $password = $_POST['password'];
-            echo $password;
+    if (isset($_POST['name']) && isset($_POST['description']) && isset($_POST['img']) && isset($_POST['price'])) {
 
-            $sql = "INSERT INTO users (username, password)
-            VALUES ('$username', '$password')";
+        $name = $_POST['name'];
+        $description = $_POST['description'];
+        $img = $_POST['img'];
+        $price = $_POST['price'];
 
-            $conn->exec($sql);
-            echo "new record created";
-    ?>
+        $sql = "INSERT INTO menu (name, description, img, price)
+        VALUES ('$name', '$description', '$img', '$price')";
+        $conn->exec($sql);
+
+
+        header("Location: menuAdmin.php");
+        exit();
+    }
+?>
     
 </body>
-</html>
+</html>`
