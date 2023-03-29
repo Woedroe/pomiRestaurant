@@ -37,7 +37,7 @@
     <div class="backgroundbox">
 
     <div class="backgroundblack">
-        <div>
+        <div class="addbar">
             <form naam="login" action="temp-MemuAddScreen.php" method="POST">
 
                 <input type="text" name='name' placeholder="Name" required>
@@ -63,13 +63,22 @@
 
                 foreach ($stmt as $row) {
                     echo '<div class="menu-item">';
-                    echo '<form class:"xxx" naam="Delete" action="temp-menuAdminRUS.php" method="POST">';
+                    echo '<form class="xxx" name="Delete" action="temp-menuAdminDEL.php" method="POST">';
+                    echo '<input type="hidden" name="id" value="' . $row['id'] . '">';
                     echo '<input type="submit" name="submit" value="X">';
                     echo '</form>';
+                    echo '<form class="+++" name="Eddit" action="temp-menuAdminEDI.php" method="POST">';
+                    echo '<input type="hidden" name="id" value="' . $row['id'] . '">';
+                    echo '<input type="hidden" name="id" value="' . $row['img'] . '">';
+                    echo '<input type="hidden" name="id" value="' . $row['name'] . '">';
+                    echo '<input type="hidden" name="id" value="' . $row['description'] . '">';
+                    echo '<input type="hidden" name="id" value="' . $row['price'] . '">';
+                    echo '<input type="submit" name="submit" value="+">';
+                    echo '</form>';
                     echo '<img src="' . $row['img'] . '">';
-                    echo '<H1>' . $row['name'] . '</H1>';
+                    echo '<h1>' . $row['name'] . '</h1>';
                     echo '<p>' . $row['description'] . '</p>';
-                    echo '<span>' . $row['price'] .     '</span>';
+                    echo '<span>€' . $row['price'] . '</span>';
                     echo '</div>';
                 }
 

@@ -44,7 +44,18 @@
 
             <?php
 
+                require_once 'pages/conn.php';
 
+                $stmt = $conn->query("SELECT * FROM menu");
+
+                foreach ($stmt as $row) {
+                    echo '<div class="menu-item">';
+                    echo '<img src="' . $row['img'] . '">';
+                    echo '<h1>' . $row['name'] . '</h1>';
+                    echo '<p>' . $row['description'] . '</p>';
+                    echo '<span>' . $row['price'] . '</span>';
+                    echo '</div>';
+                }
 
             ?>
         </div>

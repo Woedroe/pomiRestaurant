@@ -17,12 +17,23 @@
         $name = $_POST['name'];
         $description = $_POST['description'];
         $img = $_POST['img'];
-        $price = $_POST['price'];
+        $price = (float) $_POST['price'];
 
-        $sql = "INSERT INTO menu (name, description, img, price)
-        VALUES ('$name', '$description', '$img', '$price')";
-        $conn->exec($sql);
+        $data = [
+            'name' => $name,
+            'description' => $description,
+            'img' => $img,
+            'price' => $price,
+        ];
 
+        $sql = "INSERT INTO menu (name, description, img, price) 
+        VALUES (:name, :description, :img, :price)";
+        try{
+            $stmt= $conn->prepare($sql);
+            $stmt->execute($data);
+        }catch (PDOException $e){
+            echo $e->getMessage();
+        }
 
         header("Location: menuAdmin.php");
         exit();

@@ -474,16 +474,119 @@ header{
 		}
 	}
 
-.menu-item{
-	background-color: white;
-	color: #000000;
-	font-size: 80%;
-	height: 50%;
+.menu-item {
+	background-color: #373737;
+	color: #ffffff;
+	font-size: 50%;
+	height: auto;	
 	width: 25%;
 	margin-left: 2%;
 	margin-top: 2%;	
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
 }
 
-.xxx{
-	position: absolute;
+.menu-item img {
+    width: 80%;
+	height: auto;
+    display: block;
+    margin: 0 auto;
+	border: red 1px solid;
+	border-radius: 1rem;
 }
+
+.menu-item h1 {
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+.menu-item p {
+    text-align: justify;
+    margin-top: 1%;
+	margin-left: 5%;
+    margin-bottom: 2%;
+}
+
+.menu-item span {
+    display: block;
+    color: red;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.menu-item form {
+    display: inline-block;
+    margin-bottom: 2%;
+}
+
+.menu-item input[value="X"] {
+	border-top-left-radius: 1rem;
+    background-color: red;
+    color: black;
+    border: none;
+    padding: 1% 100%;
+    cursor: pointer;
+}
+
+.menu-item input[value="+"] {
+	margin-left: 2600%;
+	border-top-right-radius: 1rem;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 1% 100%;
+    cursor: pointer;
+}
+
+.addbar {
+    width: 100%;
+	height: 70%;
+	margin-left: 20%;
+    margin: 0 auto;
+}
+
+.addbar form {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: space-evenly;
+
+}
+
+.addbar input[type=text],
+.addbar input[type=description],
+.addbar input[type=img],
+.addbar input[type=price],
+.addbar input[type=submit] {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: none;
+}
+
+.addbar input[type=submit] {
+    background-color: #dd1122;
+    color: #fff;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+	position: absolute;
+	margin-top: 6%;
+}
+
+.addbar input[type=submit]:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
