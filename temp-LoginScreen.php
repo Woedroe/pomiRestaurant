@@ -25,12 +25,9 @@
         if ($row['username'] == $username AND $row['password'] == $password) {
             echo "<p>loged-in</p>";
 
-            if($row['roll'] == 1) {
+                
                 header("Location: menuAdmin.php");
-            }else{
-                header("Location: loged-In.php");
-            }
-            exit;
+            
         } else {
             echo "<p>incorrect username or password</p>";
             header("Location: error-log-In.php");

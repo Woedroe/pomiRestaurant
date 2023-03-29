@@ -37,7 +37,6 @@
 
     <div class="wave-container">
         <div class="wave"></div>
-
     </div>
 
         <h1>Contact Us</h1>
