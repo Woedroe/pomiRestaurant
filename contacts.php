@@ -43,7 +43,7 @@
         <p>Fill out the form below to get in touch with us.</p>
 
         <form action="#" method="post">
-            <label for="name">Name:</label>
+            <label for="name">name:</label>
             <input type="text" id="name" name="name" required>
 
             <label for="email">Email:</label>
