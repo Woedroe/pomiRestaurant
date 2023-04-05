@@ -68,18 +68,18 @@ if(isset($_SESSION['username']) && isset($_SESSION['roll'])){
 
                 <input type="password" name='password' placeholder="password">
 
-                <input id="login-register" type="submit" name='submit' value="login">
+                <input id="login" type="submit" name='submit' value="login">
 
             </form>
 
-            <form naam="login" action="temp-RegisterScreen.php" method="POST">
+            <form naam="register" action="temp-RegisterScreen.php" method="POST">
 
 
                 <input type="username" name='username' placeholder="username">
 
                 <input type="password" name='password' placeholder="password">
 
-                <input id="login-register" type="submit" name='submit' value="Register">
+                <input id="register" type="submit" name='submit' value="Register">
 
 
             </form>

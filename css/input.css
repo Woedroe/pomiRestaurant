@@ -1,21 +1,75 @@
-div form input{
-	background-color: red;
-	color: black;
-	font-family: 'Iceland', cursive;
-	font-size: 70%;
-	width: 170%;
-	height: 15%;
-	border-radius: 100px;
-	border: 2px solid #D1A653;
-	text-align: center;
-}	
-
-.middel form{
-	margin-left: -15%;
+form {
+	margin-top: -10%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
-	height: 500px;
+	align-items: center;
+	animation: fade-in 1s ease-in-out;
+	border-radius: 10px;
+	padding: 3%;
+	background-color: #1F1F1F;
+	width: 40%;
+	animation: slide-in 0.5s ease-out;
+}
+  
+input[type="username"],
+input[type="password"] {
+	width: 80%;
+	padding: 3%;
+	margin-top: 3%;
+	border: none;
+	border-radius: 5px;
+	background-color: #3F3F3F;
+	color: #FFD700;
 	text-align: center;
-	width: 200px;
+	box-shadow: 0 0 5px #FFD700;
+	font-family: 'Kosugi', sans-serif;
+	font-size: 1.2rem;
+	opacity: 0;
+	transform: translateY(50%);
+	animation: fade-in 1s ease-in-out forwards;
+	animation-delay: 0.5s;
+}
+  
+input[type="submit"] {
+	width: 60%;
+	margin-top: 7%;
+	padding: 3%;
+	border: none;
+	border-radius: 5px;
+	background-color: #CC0033;
+	color: #FFD700;
+	font-size: 1.5vw;
+	text-align: center;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+	box-shadow: 0 0 3px #FFD700;
+	font-family: 'Kosugi', sans-serif;
+	opacity: 0;
+	transform: translateY(50%);
+	animation: fade-in 1s ease-in-out forwards;
+	animation-delay: 1s;
+}
+
+input[type="submit"]:hover {
+	background-color: #FF3366;
+}
+  
+@keyframes fade-in {
+	from {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes slide-in {
+	from {
+		transform: translateY(-100%);
+	}
+	to {
+		transform: translateY(0);
+	}
 }	
