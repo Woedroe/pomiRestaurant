@@ -1,21 +1,9 @@
 <?php
 session_start();
-$menu = "";
-$login = "";
-require_once 'pages/conn.php';
+session_unset();
+session_destroy();
 
-if(isset($_SESSION['username']) && isset($_SESSION['roll'])){
-    if($_SESSION['roll'] <= 5) {
-        $menu = "<a href='menuAdmin.php'>MenuA</a>";
-        $login = "<a href='log-out.php'><font color=red>Logout</font></a>";
-    } else {
-        $menu = "<a href='menu.php'>Menu</a>";
-        $login = "<a href='log-out.php'><font color=red>Logout</font></a>";
-    }
-} else {
-    $menu = "<a href='menu.php'>Menu</a>";
-    $login = "<a href='log-In.php'><font color=red>Log in</font></a>";
-}
+header("Location: log-in.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,7 +20,6 @@ if(isset($_SESSION['username']) && isset($_SESSION['roll'])){
     <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
 </head>
 <body>  
-
     <header>
         <div class="pomi">
             <?php
@@ -52,7 +39,7 @@ if(isset($_SESSION['username']) && isset($_SESSION['roll'])){
             <?php echo $login; ?>
         </div>
     </header>
-
+    
     <div class="backgroundbox">
 
         <div class="side">
@@ -62,38 +49,27 @@ if(isset($_SESSION['username']) && isset($_SESSION['roll'])){
 
         <div class="middel">
 
-        <form naam="login" action="temp-LoginScreen.php" method="POST">
+            <form naam="login" action="temp-LoginScreen.php" method="POST">
 
-            <input type="username" name='username' placeholder="username">
+                <input type="username" name='username' placeholder="username">
 
-            <input type="password" name='password' placeholder="password">
+                <input type="password" name='password' placeholder="password">
 
-            <input id="login-register" type="submit" name='submit' value="login">
+                <input id="login-register" type="submit" name='submit' value="login">
 
-        </form>
+            </form>
 
-        <div class="success">   
-
-
-
-            <div class="cone"></div>
-            <p>Login successful</p>
-            <p><?php echo "Welcome " . $_SESSION['username']; ?></p>
-        </div>
-        
-        <meta http-equiv="refresh" content="3.5;url=index.php">
-
-        <form naam="login" action="temp-RegisterScreen.php" method="POST">
+            <form naam="login" action="temp-RegisterScreen.php" method="POST">
 
 
-            <input type="username" name='username' placeholder="username">
+                <input type="username" name='username' placeholder="username">
 
-            <input type="password" name='password' placeholder="password">
+                <input type="password" name='password' placeholder="password">
 
-            <input id="login-register" type="submit" name='submit' value="Register">
+                <input id="login-register" type="submit" name='submit' value="Register">
 
 
-        </form>
+            </form>
 
         </div>
 

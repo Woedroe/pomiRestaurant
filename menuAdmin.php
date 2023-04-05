@@ -1,3 +1,30 @@
+<?php
+session_start();
+$menu = "";
+$login = "";
+require_once 'pages/conn.php';
+
+if(isset($_SESSION['username']) && isset($_SESSION['roll'])){
+    if($_SESSION['roll'] <= 5) {
+        // User has a roll of 5 or lower, allow access to menuAdmin.php
+    } else {
+        header("Location: index.php");
+        exit();
+    }
+}
+if(isset($_SESSION['username']) && isset($_SESSION['roll'])){
+    if($_SESSION['roll'] <= 5) {
+        $menu = "<a href='menuAdmin.php'>MenuA</a>";
+        $login = "<a href='log-out.php'><font color=red>Logout</font></a>";
+    } else {
+        $menu = "<a href='menu.php'>Menu</a>";
+        $login = "<a href='log-out.php'><font color=red>Logout</font></a>";
+    }
+} else {
+    $menu = "<a href='menu.php'>Menu</a>";
+    $login = "<a href='log-In.php'><font color=red>Log in</font></a>";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,24 +41,24 @@
 <body>  
 
     <header>
-            <div class="pomi">
-                <?php
-                echo "<p> <font color=red>Pomi </font>Grill & Sushi </p>";
-                ?>
-            </div>
-            <div class="boxxy">
-                 <a href="index.php" class="IndexA">Home</a>
-            </div>
-            <div class="boxxy">
-                 <a href="menu.php">Menu</a>
-            </div>
-            <div class="boxxy">
-                <a href="contacts.php">Contacts</a>
-            </div>
-            <div class="boxxy" id="log-in">
-                <a href="log-In.php"><font color=red>Log in</font></a>  
-            </div>
-    </header>   
+        <div class="pomi">
+            <?php   
+            echo "<p> <font color=red>Pomi </font>Grill & Sushi </p>";
+            ?>
+        </div>
+        <div class="boxxy">
+            <a href="index.php" class="IndexA">Home</a>
+        </div>
+        <div class="boxxy">
+            <?php echo $menu; ?>
+        </div>
+        <div class="boxxy">
+            <a href="contacts.php">Contacts</a>
+        </div>
+        <div class="boxxy" id="log-in">
+            <?php echo $login; ?>
+        </div>
+    </header>
 
     
     <div class="backgroundbox">
@@ -63,22 +90,19 @@
 
                 foreach ($stmt as $row) {
                     echo '<div class="menu-item">';
-                    echo '<form class="xxx" name="Delete" action="temp-menuAdminDEL.php" method="POST">';
-                    echo '<input type="hidden" name="id" value="' . $row['id'] . '">';
-                    echo '<input type="submit" name="submit" value="X">';
-                    echo '</form>';
-                    echo '<form class="+++" name="Eddit" action="temp-menuAdminEDI.php" method="POST">';
-                    echo '<input type="hidden" name="id" value="' . $row['id'] . '">';
-                    echo '<input type="hidden" name="id" value="' . $row['img'] . '">';
-                    echo '<input type="hidden" name="id" value="' . $row['name'] . '">';
-                    echo '<input type="hidden" name="id" value="' . $row['description'] . '">';
-                    echo '<input type="hidden" name="id" value="' . $row['price'] . '">';
-                    echo '<input type="submit" name="submit" value="+">';
-                    echo '</form>';
-                    echo '<img src="' . $row['img'] . '">';
-                    echo '<h1>' . $row['name'] . '</h1>';
-                    echo '<p>' . $row['description'] . '</p>';
-                    echo '<span>€' . $row['price'] . '</span>';
+                        echo '<form class="xxx" name="Delete" action="temp-menuAdminDEL.php" method="POST">';
+                            echo '<input type="hidden" name="id" value="' . $row['id'] . '">';
+                            echo '<input type="submit" name="submit" value="X">';
+                        echo '</form>';
+                        echo '<form class="+++" name="Eddit" action="temp-menuAdminEDI.php" method="POST">';
+                            echo '<input type="hidden" name="id" value="' . $row['id'] . '">';
+                            echo '<input type="submit" name="submit" value="+">';
+                        echo '</form>';
+                        echo 'ID: ' . $row['id'];
+                        echo '<img src="' . $row['img'] . '">';
+                        echo '<h1>' . $row['name'] . '</h1>';
+                        echo '<p>' . $row['description'] . '</p>';
+                        echo '<span>€' . $row['price'] . '</span>';
                     echo '</div>';
                 }
 

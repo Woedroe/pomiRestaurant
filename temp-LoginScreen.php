@@ -16,6 +16,8 @@
         
         $password = $_POST['password'];
 
+        $roll = (int)$_POST['roll'];
+
         $stmt = $conn->prepare("SELECT username, password, roll FROM users WHERE username=:username AND password=:password");
 
         $stmt->execute(['username' => $username, 'password' => $password]); 
@@ -23,11 +25,13 @@
 
 
         if ($row['username'] == $username AND $row['password'] == $password) {
-            echo "<p>loged-in</p>";
+            session_start();
 
-                
-                header("Location: menuAdmin.php");
-            
+            $_SESSION['username'] = $row['username'];
+            $_SESSION['id'] = $row['id'];
+            $_SESSION['roll'] = $row['roll'];
+
+            header("Location: loged-in.php");
         } else {
             echo "<p>incorrect username or password</p>";
             header("Location: error-log-In.php");

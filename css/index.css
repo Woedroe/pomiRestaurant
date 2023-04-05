@@ -44,6 +44,9 @@ header{
 #log-in{
 	margin-left: 40%;
 }
+#log-out{
+	margin-left: -20%;
+}
 
 .index-body{
 	height: 86vh;
@@ -583,10 +586,3 @@ header{
 .addbar input[type=submit]:hover {
     transform: scale(1.05);
 }
-
-
-
-
-
-
-
