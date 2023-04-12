@@ -20,6 +20,7 @@ header("Location: log-in.php");
     <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
 </head>
 <body>  
+
     <header>
         <div class="pomi">
             <?php
@@ -35,11 +36,13 @@ header("Location: log-in.php");
         <div class="boxxy">
             <a href="contacts.php">Contacts</a>
         </div>
+        <div class="boxxy">
+        <?php echo $edit;?>
+        </div>
         <div class="boxxy" id="log-in">
             <?php echo $login; ?>
         </div>
     </header>
-    
     <div class="backgroundbox">
 
         <div class="side">

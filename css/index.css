@@ -40,6 +40,14 @@ header{
 	height: 40%;
 	width: 15%;
 }
+.boxxy{
+	height: 40%;
+	width: 15%;
+}
+
+#box{
+	margin-left: 10%;
+}
 
 #log-in{
 	margin-left: 40%;

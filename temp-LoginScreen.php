@@ -31,7 +31,7 @@
             $_SESSION['id'] = $row['id'];
             $_SESSION['roll'] = $row['roll'];
 
-            header("Location: loged-in.php");
+            header("Location: loged-in.php");   
         } else {
             echo "<p>incorrect username or password</p>";
             header("Location: error-log-In.php");

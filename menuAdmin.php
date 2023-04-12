@@ -16,6 +16,9 @@ if(isset($_SESSION['username']) && isset($_SESSION['roll'])){
     if($_SESSION['roll'] <= 5) {
         $menu = "<a href='menuAdmin.php'>MenuA</a>";
         $login = "<a href='log-out.php'><font color=red>Logout</font></a>";
+        if($_SESSION['roll'] ==1){
+            $edit = "<a href='temp-accountEdit.php'>editACC</a>";
+        }
     } else {
         $menu = "<a href='menu.php'>Menu</a>";
         $login = "<a href='log-out.php'><font color=red>Logout</font></a>";
@@ -40,20 +43,24 @@ if(isset($_SESSION['username']) && isset($_SESSION['roll'])){
 </head>
 <body>  
 
+
     <header>
         <div class="pomi">
-            <?php   
+            <?php
             echo "<p> <font color=red>Pomi </font>Grill & Sushi </p>";
             ?>
         </div>
         <div class="boxxy">
-            <a href="index.php" class="IndexA">Home</a>
+            <a href="index.php" class="IndexA">Home</a> 
         </div>
         <div class="boxxy">
             <?php echo $menu; ?>
         </div>
         <div class="boxxy">
             <a href="contacts.php">Contacts</a>
+        </div>
+        <div class="boxxy" id="box">
+        <?php echo $edit;?>
         </div>
         <div class="boxxy" id="log-in">
             <?php echo $login; ?>
