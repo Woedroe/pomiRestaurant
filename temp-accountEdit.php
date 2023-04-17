@@ -5,7 +5,7 @@ require_once 'pages/conn.php';
 
 if ($_SESSION['roll'] != 1) {
     echo "You don't have the required role to edit other accounts.";
-    exit();
+    header('Location: index.php');
 }
 
 $stmt = $conn->query("SELECT id, username, roll FROM users");
@@ -17,9 +17,8 @@ $stmt = $conn->query("SELECT id, username, roll FROM users");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/editacc.css">
+    <link rel="stylesheet" href="css/editmenu.css">
     <title>Accounts - Admin Panel</title>
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
@@ -37,6 +36,12 @@ $stmt = $conn->query("SELECT id, username, roll FROM users");
                                 echo '<input type="hidden" name="id" value="' . $row['id'] . '">'; 
                             } ?>
                             <input type="submit" name="submit" value="change">
+                        </form>
+                        <form class="edit-form2" action="temp-accountDEL.php" method="POST">
+                            <?php if (isset($row['id'])) {
+                                echo '<input type="hidden" name="id" value="' . $row['id'] . '">'; 
+                            } ?>
+                            <input type="submit" name="submit" value="Delete">
                         </form>
                     </div>
                 </div>

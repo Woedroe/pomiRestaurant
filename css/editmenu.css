@@ -1,0 +1,103 @@
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  margin: 50px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+}
+
+.grid-item {
+  background-color: #1f1f1f;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease-out;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+.account-info {
+  margin-bottom: 20px;
+}
+
+.account-info h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.account-info p {
+  font-size: 24px;
+}
+
+.account-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.edit-form {
+  margin: 0;
+}
+
+.edit-form input[type="submit"] {
+  background-color: #ffd700;
+  color: #000000;
+  font-size: 24px;
+  border: none;
+  margin-left: -5%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-out;
+}
+.edit-form2 input[type="submit"] {
+  background-color: #ffd700;
+  color: #000000;
+  font-size: 24px;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 5%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-out;
+}
+
+.edit-form input[type="submit"]:hover {
+  background-color: #c0c0c0;
+}
+
+.button {
+  display: inline-block;
+  background-color: #ffd700;
+  color: #000000;
+  font-size: 24px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 30px;
+  transition: background-color 0.2s ease-out;
+}
+
+.button:hover {
+  background-color: #c0c0c0;
+}

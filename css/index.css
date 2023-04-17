@@ -50,10 +50,10 @@ header{
 }
 
 #log-in{
-	margin-left: 40%;
+	margin-left: 25%;
 }
 #log-out{
-	margin-left: -20%;
+	margin-left: -30%;
 }
 
 .index-body{
@@ -387,6 +387,7 @@ header{
 }
 
 .bal {
+	z-index: 999;
 	position: absolute;
 	display: flex;
 	justify-content: center;
@@ -397,6 +398,7 @@ header{
 }
 
 .error {
+	z-index: 999;
 	background-color: gray;
 	color: #fff;
 	padding: 20px;

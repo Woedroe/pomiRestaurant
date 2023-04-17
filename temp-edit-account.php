@@ -39,7 +39,7 @@ if (isset($_POST['submit'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Account - Admin Panel</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/editacc.css">
 </head>
 <body>
     <div class="container">
@@ -59,7 +59,7 @@ if (isset($_POST['submit'])) {
         </div>
         <button type="submit" name="submit" class="button">Save</button>
         </form>
-        <a href="accounts.php" class="button">Back to HomePage</a>
+        <a href="temp-accountEdit.php" class="button">Back to accounts</a>
     </div>
 </body>
 </html>

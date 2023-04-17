@@ -1,134 +1,88 @@
 body {
-    background-color: black;
-    color: white;
+    background-color: #000000;
+    color: #ffffff;
     font-family: Arial, sans-serif;
-    font-size: 1rem;
-    margin: 0;
-    padding: 0;
   }
   
-  /* Container */
   .container {
-    margin: 0 auto;
-    max-width: 70%;
-    padding: 2rem;
-  }
-  
-  /* Headings */
-  h1, h2 {
-    color: white;
+    margin: 50px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #1b1b1b;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   
   h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
     text-align: center;
-    text-shadow: 0 0 5px gold;
+    margin-bottom: 30px;
+    color: #d4af37;
+    text-shadow: 1px 1px #000000;
   }
   
-  h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    text-shadow: 0 0 2px gold;
+  .form-group {
+    margin-bottom: 20px;
   }
   
-  /* Grid */
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 2rem;
+  label {
+    display: block;
+    margin-bottom: 5px;
   }
   
-  .grid-item {
-    background-color: black;
-    box-shadow: 0 0 10px gold;
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  .grid-item:hover {
-    box-shadow: 0 0 20px gold;
-  }
-  
-  /* Buttons */
-  .button {
-    background-color: red;
+  input[type="text"],
+  input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
     border: none;
-    border-radius: 0.5rem;
-    color: white;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .button {
     display: inline-block;
-    font-size: 1rem;
-    margin-top: 2rem;
-    padding: 1rem 2rem;
-    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d4af37;
+    color: #1b1b1b;
     text-decoration: none;
-    text-transform: uppercase;
-    transition: all 0.2s ease-in-out;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-right: 10px;
+    margin-top: 10px;
   }
   
   .button:hover {
-    background-color: gold;
-    box-shadow: 0 0 10px gold;
-    color: black;
+    background-color: #c2a126;
   }
   
-  .button:active {
-    background-color: gold;
-    box-shadow: 0 0 5px gold;
-    transform: translateY(1px);
-  }
-  
-  /* Account information box */
-  .account-info {
-    background-color: black;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 10px gold;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  .account-info h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    text-shadow: 0 0 2px gold;
-  }
-  
-  .account-info p {
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Edit form box */
-  .edit-form {
-    background-color: black;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 10px gold;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  .edit-form form {
+  .form {
     display: flex;
     flex-direction: column;
   }
   
-  .edit-form form label {
-    display: block;
-    margin-bottom: 0.5rem;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
   }
   
-  .edit-form input[type="text"] {
-    padding: 0.5rem;
-    border: none;
-    border-radius: 0.5rem;
-    margin-bottom: 1rem;
+  th {
+    background-color: #333333;
+    color: #d4af37;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #000000;
   }
   
-  .edit-form input[type="submit"] {
-    background-color: gold;
-    border: none;
-    border-radius: 0.5rem;
-    color: black;
-    font-size: 1rem;
+  td {
+    background-color: #1b1b1b;
+    color: #ffffff;
+    padding: 10px;
+    border: 1px solid #000000;
   }
+  

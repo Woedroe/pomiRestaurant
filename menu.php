@@ -2,6 +2,7 @@
 session_start();
 $menu = "";
 $login = "";
+$edit = "";
 require_once 'pages/conn.php';
 
 if(isset($_SESSION['username']) && isset($_SESSION['roll'])){
@@ -79,7 +80,7 @@ if(isset($_SESSION['username']) && isset($_SESSION['roll'])){
                     echo '<img src="' . $row['img'] . '">';
                     echo '<h1>' . $row['name'] . '</h1>';
                     echo '<p>' . $row['description'] . '</p>';
-                    echo '<span>' . $row['price'] . '</span>';
+                    echo '<span>€' . $row['price'] . '</span>';
                     echo '</div>';
                 }
 

@@ -2,6 +2,7 @@
 session_start();
 $menu = "";
 $login = "";
+$edit = "";
 require_once 'pages/conn.php';
 
 if(isset($_SESSION['username']) && isset($_SESSION['roll'])){
@@ -81,7 +82,7 @@ if(isset($_SESSION['username']) && isset($_SESSION['roll'])){
             <div class="bal">
                 <div class="error">
                     <p>error</p>
-                    <p>something went wrong</p>
+                    <p>wrong inputs try again</p>
                     <div class="close">
                         <a href="log-in.php">x</a>
                     </div>

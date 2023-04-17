@@ -2,6 +2,7 @@
 session_start();
 $menu = "";
 $login = "";
+$edit = "";
 require_once 'pages/conn.php';
 
 if(isset($_SESSION['username']) && isset($_SESSION['roll'])){

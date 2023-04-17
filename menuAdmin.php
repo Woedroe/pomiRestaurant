@@ -2,6 +2,7 @@
 session_start();
 $menu = "";
 $login = "";
+$edit = "";
 require_once 'pages/conn.php';
 
 if(isset($_SESSION['username']) && isset($_SESSION['roll'])){
@@ -72,13 +73,13 @@ if(isset($_SESSION['username']) && isset($_SESSION['roll'])){
 
     <div class="backgroundblack">
         <div class="addbar">
-            <form naam="login" action="temp-MemuAddScreen.php" method="POST">
+            <form name="login" action="temp-MemuAddScreen.php" method="POST" enctype="multipart/form-data">
 
                 <input type="text" name='name' placeholder="Name" required>
 
                 <input type="description" name='description' placeholder="description" required>
 
-                <input type="img" name='img' placeholder="images" required>
+                <input class="form-control" type="file" name="img" value="" />
 
                 <input type="price" name='price' placeholder="price" required>
 
