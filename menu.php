@@ -64,7 +64,7 @@ if(isset($_SESSION['username']) && isset($_SESSION['roll'])){
 
     <div class="backgroundblack"></div>
         <div class="menulogo">
-            <img class="arch" src="IMG/arch.webp" alt="error 404">
+            <img class="arch" src="img/arch.webp" alt="error 404">
         </div>
 
         <div class="scrollmenu">

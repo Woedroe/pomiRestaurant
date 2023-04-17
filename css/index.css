@@ -538,17 +538,17 @@ header{
     background-color: red;
     color: black;
     border: none;
-    padding: 1% 100%;
+    padding: 100% 120%;
     cursor: pointer;
 }
 
 .menu-item input[value="+"] {
-	margin-left: 2600%;
+	margin-left: 2550%;
 	border-top-right-radius: 1rem;
     background-color: white;
     color: black;
     border: none;
-    padding: 1% 100%;
+    padding: 100% 120%;
     cursor: pointer;
 }
 
@@ -573,7 +573,7 @@ header{
 
 .addbar input[type=text],
 .addbar input[type=description],
-.addbar input[type=img],
+.addbar input[type=file],
 .addbar input[type=price],
 .addbar input[type=submit] {
     width: 40%;

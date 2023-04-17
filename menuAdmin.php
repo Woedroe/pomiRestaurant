@@ -106,8 +106,7 @@ if(isset($_SESSION['username']) && isset($_SESSION['roll'])){
                             echo '<input type="hidden" name="id" value="' . $row['id'] . '">';
                             echo '<input type="submit" name="submit" value="+">';
                         echo '</form>';
-                        echo 'ID: ' . $row['id'];
-                        echo '<img src="' . $row['img'] . '">';
+                        echo '<img src="img/' . $row['img'] . '">';
                         echo '<h1>' . $row['name'] . '</h1>';
                         echo '<p>' . $row['description'] . '</p>';
                         echo '<span>€' . $row['price'] . '</span>';

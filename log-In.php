@@ -65,7 +65,7 @@ if(isset($_SESSION['username']) && isset($_SESSION['roll'])){
 
         <div class="side">
             <div class="stbg"></div>   
-            <img src="IMG/chickenT.png" alt="error404" class="chicken">
+            <img src="img/chickenT.png" alt="error404" class="chicken">
         </div>
 
         <div class="middel">
@@ -96,7 +96,7 @@ if(isset($_SESSION['username']) && isset($_SESSION['roll'])){
 
         <div class="side">
             <div class="stbg"></div>
-            <img src="IMG/beefT.png" alt="error404" class="chicken">
+            <img src="img/beefT.png" alt="error404" class="chicken">
         </div>
 
     </div>

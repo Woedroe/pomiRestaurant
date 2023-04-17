@@ -61,19 +61,19 @@ if(isset($_SESSION['username']) && isset($_SESSION['roll'])){
     <div class="index-body">
         <div class="black-box">
             <div class="Logo">
-                <img src="IMG/arch.webp" alt="error.404" class="logoIMG">
+                <img src="img/arch.webp" alt="error.404" class="logoIMG">
             </div>  
             <?php
                 echo "<p> <font color=red>Pomi </font>Grill & Sushi </p>";
             ?>
             <p class="loremip">ロレム・イプサム あなたのお母さんはフェルメイディング通りで出産しました</p>
         </div>
-        <img src="IMG/sushi-background1.jpg" alt="error.404" class="sushiB">
+        <img src="img/sushi-background1.jpg" alt="error.404" class="sushiB">
     </div>
 
     <div class="extended-body">
         <div class="red-overlay"></div>
-        <img src="IMG/background2.png" alt="error.404" class="bimg">
+        <img src="img/background2.png" alt="error.404" class="bimg">
         <p class="loremip2">ニワトリは図書館を壊して火を放ち、後にニワトリは放火で逮捕される ニワトリは図書館を壊して</p>
         <div class="order">
             <p>Bestel nu</p>
@@ -89,16 +89,16 @@ if(isset($_SESSION['username']) && isset($_SESSION['roll'])){
             </p>
         </div>
         <div class="IMGholdster">
-            <img src="IMG/balls.png" alt="error404" class="balls"> 
+            <img src="img/balls.png" alt="error404" class="balls"> 
             <div class="logoholder">
-                <img src="IMG/arch.webp" alt="error 404" class="balls"> 
+                <img src="img/arch.webp" alt="error 404" class="balls"> 
             </div>
         </div>
     </div>
 
     <div class="extended-body" id="bottem-body">
         <div class="holdster">
-            <img class="balls" src="IMG/noodle.png" alt="error404">
+            <img class="balls" src="img/noodle.png" alt="error404">
         </div>
         <div class="holdster2">
             <p>何を考えていたのかわか らない子供を置き去りにして今、私は呪いに苦しみ、今、Hamburberこの怒りと罪悪感と悲しみと 永遠に私を悩ませに来る川の果ての崖が待ちきれないこれは私が求めている復讐ですか？それとも私に復讐する人を探していますか？</p>

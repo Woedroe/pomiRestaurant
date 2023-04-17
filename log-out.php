@@ -47,7 +47,7 @@ header("Location: log-in.php");
 
         <div class="side">
             <div class="stbg"></div>   
-            <img src="IMG/chickenT.png" alt="error404" class="chicken">
+            <img src="img/chickenT.png" alt="error404" class="chicken">
         </div>
 
         <div class="middel">
@@ -78,7 +78,7 @@ header("Location: log-in.php");
 
         <div class="side">
             <div class="stbg"></div>
-            <img src="IMG/beefT.png" alt="error404" class="chicken">
+            <img src="img/beefT.png" alt="error404" class="chicken">
         </div>
 
     </div>
