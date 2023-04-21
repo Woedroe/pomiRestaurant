@@ -12,8 +12,6 @@ if (isset($_POST['name']) && isset($_POST['description']) && isset($_FILES['img'
     $price = (float) $_POST['price'];
 
 
-    //var_dump(isset($_FILES["img"]));
-    //var_dump($_FILES["img"]["error"]);
     if(isset($_FILES["img"]) && $_FILES["img"]["error"] == 0){
 
         $target_dir = "img/";
@@ -21,11 +19,7 @@ if (isset($_POST['name']) && isset($_POST['description']) && isset($_FILES['img'
         $target_file = $target_dir . $file_name;
         $img_path = $file_name;
 
-        //if(move_uploaded_file($_FILES["img"]["tmp_name"], $target_file)){
-       //     echo "The file ". $file_name. " has been uploaded.";
-       // }else{
-       //      echo "Sorry, there was an error uploading your file.";
-       //  }
+
     }else{
         echo "Error: No file uploaded.";
     }

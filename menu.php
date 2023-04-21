@@ -77,10 +77,10 @@ if(isset($_SESSION['username']) && isset($_SESSION['roll'])){
 
                 foreach ($stmt as $row) {
                     echo '<div class="menu-item">';
-                    echo '<img src="' . $row['img'] . '">';
-                    echo '<h1>' . $row['name'] . '</h1>';
-                    echo '<p>' . $row['description'] . '</p>';
-                    echo '<span>€' . $row['price'] . '</span>';
+                        echo '<img src="img/' . $row['img'] . '">'; 
+                        echo '<h1>' . $row['name'] . '</h1>';
+                        echo '<p>' . $row['description'] . '</p>';
+                        echo '<span>€' . $row['price'] . '</span>';
                     echo '</div>';
                 }
 
