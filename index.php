@@ -98,7 +98,7 @@ if(isset($_SESSION['username']) && isset($_SESSION['roll'])){
 
     <div class="extended-body" id="bottem-body">
         <div class="holdster">
-            <img class="balls" src="img/noodle.png" alt="error404">
+            <img class="balls" src="img/noodle.png" alt="Error404">
         </div>
         <div class="holdster2">
             <p>何を考えていたのかわか らない子供を置き去りにして今、私は呪いに苦しみ、今、Hamburberこの怒りと罪悪感と悲しみと 永遠に私を悩ませに来る川の果ての崖が待ちきれないこれは私が求めている復讐ですか？それとも私に復讐する人を探していますか？</p>
